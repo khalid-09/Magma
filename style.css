@@ -1,6 +1,6 @@
 * {
-    margin: 0;
-    padding: 0;
+    margin: 0%;
+    padding: 0%;
     box-sizing: border-box;
 }
 
@@ -10,31 +10,34 @@ body {
     width: 100%;
 }
 
+.main {
+    position: relative;
+    overflow: hidden;
+    background-color: #1137ca;
+}
+
 @font-face {
     font-family: a;
-    src: url(fonts/jost-variable.ttf);
+    /* prettier-ignore */
+    src: url(./jost-variable.ttf);
 }
 
 @font-face {
     font-family: b;
     /* prettier-ignore */
-    src: url(fonts/KFOlCnqEu92Fr1MmEU9fBBc4\ \(1\).ttf);
+    src: url(./KFOlCnqEu92Fr1MmEU9fBBc4\ \(1\).ttf);
 }
 
 @font-face {
-    font-family: a;
+    font-family: c;
     /* prettier-ignore */
-    src: url(fonts/KFOmCnqEu92Fr1Mu4mxK\ \(1\).ttf);
-}
-
-.main {
-    position: relative;
-    overflow: hidden;
+    src: url(./KFOmCnqEu92Fr1Mu4mxK\ \(1\).ttf);
 }
 
 .page-1 {
     height: 100vh;
     width: 100vw;
+    position: relative;
 }
 
 .page-1 > video {
@@ -47,7 +50,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 0 30px;
+    padding: 0px 30px;
     position: absolute;
     height: 10vh;
     width: 100vw;
@@ -56,14 +59,13 @@ body {
 .page-1 > nav > img {
     margin-top: -1.7vw;
     width: 9%;
-    mix-blend-mode: lighten;
 }
 
 .right-nav > button {
     padding: 10px 20px;
     border-radius: 50px;
+    background-color: #0b48ed;
     border: 1px solid #fff;
-    background: #0b48ed;
     color: #fff;
     font-family: a;
     font-size: 15px;
@@ -71,32 +73,42 @@ body {
 
 .bottom-page-1 {
     position: absolute;
-    bottom: 15%;
-    left: 10%;
+    bottom: 5%;
     height: 35vh;
     width: 50vw;
+    left: 10%;
 }
 
 .bottom-page-1 > h1 {
     font-family: a;
+    font-size: 5vw;
     font-weight: 100;
     line-height: 1;
-    font-size: 5vw;
     color: #fff;
 }
 
 .bottom-page-1-inner {
     position: absolute;
-    bottom: 0;
+    bottom: 0%;
     height: 35%;
     width: 100%;
 }
 
 .bottom-page-1-inner {
-    font-family: a;
     display: flex;
-    justify-content: space-between;
     align-items: center;
+    justify-content: space-between;
+    font-family: a;
+}
+
+.bottom-page-1-inner > button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 50px;
+    background-color: #fff;
+    color: #0b48ed;
+    font-size: 16px;
+    font-family: b;
 }
 
 .bottom-page-1-inner > h4 {
@@ -105,20 +117,7 @@ body {
     color: #fff;
 }
 
-.bottom-page-1-inner > button {
-    padding: 10px 20px;
-    border: none;
-    border-radius: 50px;
-    background: #fff;
-    color: #0b48ed;
-    font-size: 16px;
-    font-family: b;
-}
-
 .page-2 {
     height: 100vh;
     width: 100vw;
-    background: red;
-    position: relative;
-    color: #fff;
 }
