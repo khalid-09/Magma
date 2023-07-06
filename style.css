@@ -19,34 +19,34 @@ body {
 @font-face {
     font-family: a;
     /* prettier-ignore */
-    src: url(./jost-variable.ttf);
+    src: url(/fonts/jost-variable.ttf);
 }
 
 @font-face {
     font-family: b;
     /* prettier-ignore */
-    src: url(./KFOlCnqEu92Fr1MmEU9fBBc4\ \(1\).ttf);
+    src: url(/fonts/KFOlCnqEu92Fr1MmEU9fBBc4\ \(1\).ttf);
 }
 
 @font-face {
     font-family: c;
     /* prettier-ignore */
-    src: url(./KFOmCnqEu92Fr1Mu4mxK\ \(1\).ttf);
+    src: url(/fonts/KFOmCnqEu92Fr1Mu4mxK\ \(1\).ttf);
 }
 
-.page-1 {
+#page-1 {
     height: 100vh;
     width: 100vw;
     position: relative;
 }
 
-.page-1 > video {
+#page-1 > video {
     height: 100%;
     width: 100%;
     object-fit: cover;
 }
 
-.page-1 > nav {
+#page-1 > nav {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -56,7 +56,7 @@ body {
     width: 100vw;
 }
 
-.page-1 > nav > img {
+#page-1 > nav > img {
     margin-top: -1.7vw;
     width: 9%;
 }
@@ -120,4 +120,28 @@ body {
 .page-2 {
     height: 100vh;
     width: 100vw;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    font-family: a;
+    padding: 0vw 8vw;
+    color: #fff;
+    background: #0a3cce;
+}
+
+.page-2 > h2 {
+    font-weight: 100;
+    margin-bottom: 3vw;
+    text-transform: uppercase;
+}
+
+.page-2 > h1 {
+    width: 90%;
+    line-height: 1.3;
+    font-weight: 100;
+    font-size: 4vw;
+    letter-spacing: 0.2px;
+    color: #dadada69;
 }
